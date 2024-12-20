@@ -19,7 +19,7 @@ const Card = () => {
             Price action trading is one of the most effective and purest forms
             of market analysis. By understanding the natural movement of price,
             you can make better trading decisions without relying on lagging
-            indicators. Whether you're a beginner or an experienced trader,
+            indicators. Whether you are a beginner or an experienced trader,
             mastering price action will give you a significant edge in any
             financial market — forex, stocks, commodities, or cryptocurrencies.
           </p>
