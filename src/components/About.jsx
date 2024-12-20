@@ -9,7 +9,7 @@ const About = () => {
         <button className="cta-button">Join Us Now</button>
       </div>
       <div className="about-image">
-        <img src="./public/about.jpg" alt="Trading Tools" />
+        <img src="/public/about.jpg" alt="Trading Tools" />
       </div>
     </div>
   );
