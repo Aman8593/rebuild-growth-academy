@@ -19,7 +19,7 @@ function App() {
         </ul>
       </div>
       <div className="home">
-        <img className="img" href="/bull.jpg" alt="bull" />
+        <img className="img" src="/bull.jpg" alt="bull" />
         <div>
           <h1>Learn to trade in the most simplified way.</h1>
           <p>
