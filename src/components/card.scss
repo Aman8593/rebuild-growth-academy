@@ -1,0 +1,158 @@
+.cards-section {
+  text-align: center;
+  padding: 2rem;
+
+  .cards-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #363333;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+  
+    /* Gradient Text */
+    background: linear-gradient(45deg, #007bff, #ff4081);
+    -webkit-background-clip: text;
+    color: transparent;
+  
+    /* Subtle Text Shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  
+    /* Give it a nice border effect */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+  
+    /* Add some letter-spacing to make the text look more refined */
+    letter-spacing: 1px;
+  }
+  
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card Styles */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+
+  
+  /* Card Styles */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  
+    /* Gradient Background */
+    background: linear-gradient(135deg, #f4f4f9 0%, #e2e8f0 100%);
+    border: 1px solid #e2e8f0; /* Subtle border for better distinction */
+  
+    /* Hover Effects */
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* Blue gradient on hover */
+      color: white; /* White text color on hover */
+    }
+  
+    /* Header Styling */
+    h2 {
+      font-size: 1.5rem;
+      color: #333; /* Default dark color */
+      margin-bottom: 0.75rem;
+      transition: color 0.3s ease;
+      font-weight: bold;
+      position: relative;
+  
+      /* Interactive text color */
+      &:hover {
+        color: #ff9800; /* Orange color on hover */
+      }
+    }
+  
+    /* Static Underline */
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px; /* Positioning the underline just below the text */
+      left: 0;
+      width: 100%; /* Full width underline */
+      height: 3px; /* Thickness of the underline */
+      background-color: #ff5722; /* Static underline color (Orange) */
+    }
+  
+    /* Paragraph Styling */
+    p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+      transition: color 0.3s ease;
+    }
+  
+    /* Hover effect for paragraph text */
+    &:hover p {
+      color: #ffffff; /* Change to white on hover */
+    }
+  
+    /* Hover Border Effect */
+    &:hover {
+      border: 1px solid #ffffff; /* White border on hover for contrast */
+    }
+  }
+
+  
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* One column on very small screens */
+    }
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
